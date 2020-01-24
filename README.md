@@ -1,4 +1,4 @@
-<p align="center"><img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwif4Ovhg5znAhUkwzgGHU1SCHgQjRx6BAgBEAQ&url=https%3A%2F%2Fprabidhi.info%2Fen%2Fcodecamp-2019-commenced-wrc-25000-reward%2F&psig=AOvVaw160ZRl62NUnf1F1KlB9u88&ust=1579948170494970"></p>
+<p align="center"><img src="https://prabidhi.info/wp-content/uploads/2020/01/CodeCamp-2019-Pokhara-WRC.jpg"></p>
 
 
 ## Tutorials Used
