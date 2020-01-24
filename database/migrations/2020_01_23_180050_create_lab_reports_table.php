@@ -15,6 +15,11 @@ class CreateLabReportsTable extends Migration
     {
         Schema::create('lab_reports', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->bigInteger('patient_id');
+            $table->string('name');
+            $table->string('type');
+            $table->string('image');
+            $table->string('summary');
             $table->timestamps();
         });
     }

@@ -15,7 +15,14 @@ class CreateDoctorsTable extends Migration
     {
         Schema::create('doctors', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('nmc');
+            $table->string('specialization');
+            $table->string('title');
+            $table->string('education');
+            $table->string('availability');
+            $table->bigInteger('user_id')->uniqie();
             $table->timestamps();
+
         });
     }
 
