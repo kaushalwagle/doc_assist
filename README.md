@@ -1,4 +1,4 @@
-<p align="center"><img src="https://www.codecamp2019.co/static/media/logo2.b98726c5.png" style="background-color:black;" width="400"></p>
+<p align="center"><img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwif4Ovhg5znAhUkwzgGHU1SCHgQjRx6BAgBEAQ&url=https%3A%2F%2Fprabidhi.info%2Fen%2Fcodecamp-2019-commenced-wrc-25000-reward%2F&psig=AOvVaw160ZRl62NUnf1F1KlB9u88&ust=1579948170494970"></p>
 
 
 ## Tutorials Used
