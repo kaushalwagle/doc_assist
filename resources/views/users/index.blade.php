@@ -6,8 +6,17 @@
         <div class="pull-left">
             <h2>Users Management</h2>
         </div>
+    </div>
+</div>
+<div class='row'>
+    <div class="col-md-2">
         <div class="pull-right">
-            <a class="btn btn-success" href="{{ route('users.create') }}"> Create New User</a>
+            <a class="btn btn-success" href="{{ route('patients.create') }}"> Create New Patient</a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="pull-right">
+            <a class="btn btn-success" href="{{ route('users.create') }}"> Create New Doctor</a>
         </div>
     </div>
 </div>
@@ -18,7 +27,7 @@
 </div>
 @endif
 
-<table class="table table-bordered">
+<table class="table table-bordered mt-4">
     <tr>
         <th>No</th>
         <th>Name</th>

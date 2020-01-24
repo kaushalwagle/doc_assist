@@ -18,8 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile', 'PatientController@profile');
 
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('roles', 'RoleController');
     Route::resource('users', 'UserController');
+    Route::resource('patients', 'PatientController');
 });

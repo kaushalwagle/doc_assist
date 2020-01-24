@@ -12,6 +12,11 @@ use Carbon\Carbon;
 
 class UserController extends Controller
 {
+    function __construct()
+    {
+        // $this->middleware('role:Doctor', ['only' => ['index','edit','update']]);
+        $this->middleware('role:Admin');
+    }
     /**
      * Display a listing of the resource.
      *

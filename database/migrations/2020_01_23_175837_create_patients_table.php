@@ -15,13 +15,13 @@ class CreatePatientsTable extends Migration
     {
         Schema::create('patients', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('user_id')->uniqie();
-            $table->timestamp('dob');
+            $table->bigInteger('doctor_id');
+            $table->date('dob');
             $table->string('emergency_contact_name');
             $table->string('emergency_contact_phone');
-            $table->string('history');
-            $table->string('medical_problems');
-            $table->string('diagnosis');
+            $table->string('history')->nullable();
+            $table->string('medical_problems')->nullable();
+            $table->string('diagnosis')->nullable();
             $table->timestamps();
 
         });
