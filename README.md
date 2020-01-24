@@ -1,4 +1,4 @@
-<p align="center"><img src="https://www.codecamp2019.co/static/media/logo2.b98726c5.png" width="400"></p>
+<p align="center"><img src="https://www.codecamp2019.co/static/media/logo2.b98726c5.png" style="background-color:#59A6D5;" width="400"></p>
 
 
 ## Tutorials Used
