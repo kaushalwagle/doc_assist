@@ -1,10 +1,10 @@
-<p align="center"><img src="https://www.codecamp2019.co/static/media/logo2.b98726c5.png" style="background-color:#59A6D5;" width="400"></p>
+<p align="center"><img src="https://prabidhi.info/wp-content/uploads/2020/01/CodeCamp-2019-Pokhara-WRC.jpg"></p>
 
 
 ## Tutorials Used
 
 These are the websites used to get some code snipits from
-- [Laravel-Permission](https://morioh.com/p/3971310775ea).broadcasting).
+- [Laravel-Permission](https://morioh.com/p/3971310775ea)Tutorial.
 
 ## Learning Laravel
 
