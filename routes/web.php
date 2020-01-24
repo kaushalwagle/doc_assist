@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile', 'PatientController@profile');
+Route::get('/patients/diagnose', 'PatientController@diagnose')->name('patients.diagnosis');
 
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('roles', 'RoleController');

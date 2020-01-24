@@ -32,7 +32,7 @@
 
         <td>
             <a class="btn btn-info" href="{{ route('patients.show',$patient->id) }}">Show</a>
-            <a class="btn btn-primary" href="{{ route('patients.edit',$patient->id) }}">Edit</a>
+            <a class="btn btn-primary" href="{{ route('patients.diagnosis',$patient->id) }}">Diagnose</a>
         </td>
     </tr>
     @endforeach

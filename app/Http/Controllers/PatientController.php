@@ -66,6 +66,8 @@ class PatientController extends Controller
         $input['created_at'] = Carbon::now();
 
         $user = User::create($input);
+
+        $input['user_id'] = $user['id'];
         $patient = Patient::create($input);
         $user->assignRole('Patient');
 
@@ -84,6 +86,13 @@ class PatientController extends Controller
         $user = User::find($id);
         $doctor = User::find($user['doctor_id']);
         return view('users.show',compact('user','doctor'));
+    }
+
+    public function diagnosis($id)
+    {
+        $patient = Patient::find($id);
+        $user = User::find($patient['user_id']);
+        return view('users.diagnosis',compact('user','patient'));
     }
 
     /**
