@@ -4,7 +4,7 @@
 ## Tutorials Used
 
 These are the websites used to get some code snipits from
-- [Laravel-Permission](https://morioh.com/p/3971310775ea).broadcasting).
+- [Laravel-Permission](https://morioh.com/p/3971310775ea)Tutorial.
 
 ## Learning Laravel
 
