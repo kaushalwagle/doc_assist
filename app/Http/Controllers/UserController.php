@@ -8,7 +8,7 @@ use App\User;
 use Spatie\Permission\Models\Role;
 use DB;
 use Hash;
-use Carbon;
+use Carbon\Carbon;
 
 class UserController extends Controller
 {
@@ -48,7 +48,7 @@ class UserController extends Controller
             'l_name' => 'required',
             'address' => 'required',
             'gender' => 'required',
-            'phone' => 'required|phone|unique:users,phone',
+            'phone' => 'required|regex:([0-9\s\-\+\(\)]*)|unique:users,phone',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|same:confirm-password',
             'roles' => 'required'
@@ -105,11 +105,7 @@ class UserController extends Controller
             'f_name' => 'required',
             'l_name' => 'required',
             'address' => 'required',
-            'gender' => 'required',
-            'phone' => 'required|phone|unique:users,phone',
-            'email' => 'required|email|unique:users,email',
             'password' => 'required|same:confirm-password',
-            'roles' => 'required'
         ]);
 
         $input = $request->all();
