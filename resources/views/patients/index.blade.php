@@ -23,22 +23,22 @@
         <th>Phone</th>
         <th width="280px">Action</th>
     </tr>
-    @foreach ($data as $key => $patient)
+    @foreach ($data as $key => $user)
     <tr>
         <td>{{ ++$i }}</td>
-        <td>{{ $patient->f_name .' '. $patient->m_name.' '.$patient->l_name }}</td>
-        <td>{{ $patient->email }}</td>
-        <td>{{ $patient->phone }}</td>
+        <td>{{ $user->f_name .' '. $user->m_name.' '.$user->l_name }}</td>
+        <td>{{ $user->email }}</td>
+        <td>{{ $user->phone }}</td>
 
         <td>
-            <a class="btn btn-info" href="{{ route('patients.show',$patient->id) }}">Show</a>
-            <a class="btn btn-primary" href="{{ route('patients.diagnosis',$patient->id) }}">Diagnose</a>
+            <a class="btn btn-info" href="{{ route('patients.show', $user->id) }}">Show</a>
+            <a class="btn btn-primary" href="{{ route('patients.diagnosis',$user->id) }}">Diagnose</a>
         </td>
     </tr>
     @endforeach
 </table>
 
-{!! $data->render() !!}
+{!! $data ?? ''->render() !!}
 
 <p class="text-center text-primary"><small>CodeCamp 2019</small></p>
 @endsection

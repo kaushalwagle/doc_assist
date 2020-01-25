@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2> Patient</h2>
+            <h2> Show User</h2>
         </div>
         <div class="pull-right">
             <a class="btn btn-primary" href="{{ route('patients.index') }}"> Back</a>
@@ -17,80 +17,61 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Name:</strong>
-            {{ $user->f_name.' '.$user->m_name.' '.$user->l_name }}
+            {{ $user['f_name'].' '.$user['m_name'].' '.$user['l_name'] }}
         </div>
     </div>
-    {{-- <div class="col-xs-12 col-sm-12 col-md-12">
+    <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Assigned Doctor:</strong>
-            Dr. {{ $doctor->f_name.' '.$doctor->m_name.' '.$doctor->l_name }}
+            Dr. {{ $doctor['f_name'].' '.$doctor['m_name'].' '.$doctor['l_name'] }}
         </div>
-    </div> --}}
+    </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Email:</strong>
-            {{ $user->email }}
+            {{ $user['email'] }}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Phone:</strong>
-            {{ $user->phone }}
+            {{ $user['phone'] }}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Address:</strong>
-            {{ $user->address }}
-        </div>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="form-group">
-            <strong>Roles:</strong>
-            @if(!empty($user->getRoleNames()))
-            @foreach($user->getRoleNames() as $v)
-            <label class="badge badge-success">{{ $v }}</label>
-            @endforeach
-            @endif
+            {{ $user['address'] }}
         </div>
     </div>
 </div>
-@endsection
 
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
             <h2>Diagnosis</h2>
         </div>
-        <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('users.index') }}"> Back</a>
-        </div>
     </div>
 </div>
 
-@if (count($errors) > 0)
-  <div class="alert alert-danger">
-    <strong>Whoops!</strong> There were some problems with your input.<br><br>
-    <ul>
-       @foreach ($errors->all() as $error)
-         <li>{{ $error }}</li>
-       @endforeach
-    </ul>
-  </div>
-@endif
-
-{!! Form::model($patient, ['method' => 'PATCH','route' => ['patient.update', $patient->id]]) !!}
+{!! Form::model($patient, ['method' => 'PATCH','route' => ['patients.update', $patient->id]]) !!}
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-            <strong>First Name:</strong>
-            {!! Form::text('f_name', null, array('placeholder' => 'First Name','class' => 'form-control')) !!}
+            <strong>History:</strong>
+            {!! Form::text('history', null, array('placeholder' => 'History','class' => 'form-control','cols' => 20, 'rows' =>10)) !!}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-            <strong>Middle Name:</strong>
-            {!! Form::text('m_name', null, array('placeholder' => 'Middle Name','class' => 'form-control')) !!}
+            <strong>Medical Problems:</strong>
+            {!! Form::text('medical_problems', null, array('placeholder' => 'Medical Problems','class' => 'form-control','cols' => 20, 'rows' =>10)) !!}
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Diagnosis and Presctiption:</strong>
+            {!! Form::text('diagnosis', null, array('placeholder' => 'Diagnosis','class' => 'form-control','cols' => 20, 'rows' =>20)) !!}
         </div>
     </div>
 
