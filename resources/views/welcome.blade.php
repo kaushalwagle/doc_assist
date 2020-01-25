@@ -116,9 +116,9 @@
                 Doc Assist
             </div>
 
-            <div class="links">
-                Digitalizing hospitals
-            </div>
+            <h2>
+                Digitalizing Medical Records
+            </h2>
             @if (Route::has('login'))
 
             @auth
